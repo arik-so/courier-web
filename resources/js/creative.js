@@ -34,10 +34,12 @@
         duration: 600,
         delay: 1000
     });
-    sr.reveal('.sr-small-icons', {
-        duration: 600,
+    sr.reveal('.sr-contact-us', {
+        duration: 1000,
         scale: 0.3,
-        distance: '0px'
+        distance: '100px',
+        easing   : 'ease-in-out',
+        rotate   : { z: 20 }
     }, 300);
 
 })(jQuery); // End of use strict
