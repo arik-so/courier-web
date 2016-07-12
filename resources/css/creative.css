@@ -27,18 +27,12 @@ a {
   -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
-
-.navbar-brand
-{
-  background: url('../images/logo-50-gray.png') no-repeat left;
-  padding-left: 60px;
+@media (max-width: 767px) {
+  .navbar-default .navbar-header .navbar-brand {
+    padding-left: 60px;
+    background: url('../images/logo-50.png') no-repeat left;
+  }
 }
-
-.navbar-default.affix .navbar-header .navbar-brand
-{
-  background: url('../images/logo-50.png') no-repeat left;
-}
-
 .navbar-default {
   background-color: white;
   border-color: rgba(34, 34, 34, 0.05);
@@ -87,6 +81,16 @@ a {
   background-color: transparent;
 }
 @media (min-width: 768px) {
+  .navbar-brand
+  {
+    background: url('../images/logo-50-gray.png') no-repeat left;
+    padding-left: 60px;
+  }
+
+  .navbar-default.affix .navbar-header .navbar-brand
+  {
+    background: url('../images/logo-50.png') no-repeat left;
+  }
   .navbar-default {
     background-color: transparent;
     border-color: rgba(255, 255, 255, 0.3);
